@@ -2,3 +2,6 @@ json_ejemplo.json
 favicon.ico
 datatable_example.py
 cs2_skin_gen.exe
+cs2_skin_gen.db
+/build
+/dist
