@@ -113,7 +113,7 @@ def main(page: ft.Page):
                     ft.DataCell(ft.Text(gen_code_json["genCode"])),
                 ],on_select_changed=lambda e :copy_to_clipboard(gen_code_json["genCode"], gen_code_json["genCodeDetail"]["Skin_FullName"])
             )
-        temp_data_table.rows.append(table_rows)
+        temp_data_table.rows.insert(0,table_rows)
         clear_list_button.visible = True
         skin_link.value = ""
         page.update()
