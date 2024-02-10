@@ -92,6 +92,10 @@ def main(page: ft.Page):
             page.snack_bar = snack_bar(f"Code !gen for \"{item_name}\" copied")
             page.snack_bar.open = True
             page.update()
+        else:
+            page.snack_bar = snack_bar(f"Error")
+            page.snack_bar.open = True
+            page.update()
 
     def gen_code(e):
         if len(skin_link.value.strip()) == 0:
