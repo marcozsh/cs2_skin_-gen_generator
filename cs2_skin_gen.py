@@ -87,7 +87,7 @@ def main(page: ft.Page):
                                 bgcolor=ft.colors.BACKGROUND,)
 
     def copy_to_clipboard(text, item_name = ""):
-        if "!gen" in text:
+        if "!g" in text:
             clipboard.copy(text)
             page.snack_bar = snack_bar(f"Code !gen for \"{item_name}\" copied")
             page.snack_bar.open = True
